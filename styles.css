@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  direction: ltr;
+  background: #fff;
+  font-weight: normal;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: min(600px, 80%);
+  height: 400px;
+  background-color: #f8f8f8;
+  padding: 40px;
+  border-radius: 1rem;
+  box-shadow: 20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+#logo {
+  margin: 0 auto;
+  width: 100%;
+  color: #2A2E45;
+  font-weight: bold;
+  text-align: center;
+
+  -webkit-transition: .2s ease all;
+  -moz-transition: .2s ease all;
+  transition: .2s ease all;
+}
+
+form {
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 10px;
+
+  display: flex;
+  gap: 20px;
+}
+
+form input {
+  float: left;
+  clear: both;
+  width: 100%;
+  border: 1px solid;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+
+  -webkit-transition: .2s ease all;
+  -moz-transition: .2s ease all;
+  transition: .2s ease all;
+}
+
+form input[type="text"]:focus {
+  border-color: #424C55;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  width: auto;
+  background: #7765E3;
+  color: #fff;
+  cursor: pointer;
+  clear: right;
+  float: right;
+
+  -webkit-transition: .2s ease all;
+  -moz-transition: .2s ease all;
+  transition: .2s ease all;
+}
+
+button:hover {
+  opacity: 0.8;
+  -webkit-transition: .2s ease all;
+  -moz-transition: .2s ease all;
+  transition: .2s ease all;
+}
+
+button:active {
+  opacity: 0.4;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  font-size: .8rem;
+}
+
+.center #result {
+  list-style: none;
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: auto;
+    padding: 20px;
+    height: 500px;
+  }
+  
+  #logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  form {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    gap: 10px;
+  }
+}
